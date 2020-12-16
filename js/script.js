@@ -30,11 +30,11 @@ output.innerHTML = contenutoPrecedente + '<li>' + listaCognomi[i] + '</li>';
 
 }
 // indexof per vedere la posizione umana della lista in cui il nuovo utente si trova
-var posizioneUtente = document.getElementsByClassName('posizione');
+var outputDue = document.getElementById('posizione');
 var posizioneUtente = listaCognomi.indexOf(cognome) + 1;
-posizioneUtente.innerHTML = ('la sua poszione è:' + posizioneUtente );
+outputDue.innerHTML = 'la sua posizione è:' + posizioneUtente ;
 
 
 
-// alternativa alla riga 24
+// alternativa
 // output.innerHTML + = '<li>' + listaCognomi[i] + '</li>'
