@@ -14,8 +14,7 @@ var output = document.getElementById('lista');
 listaCognomi.push(cognome);
 // il sort mette in ordine alfabetico l array ed è da inserire dopo averlo aggiunto
 listaCognomi.sort();
-// indexof per vedere la posizione umana della lista in cui il nuovo utente si trova
-listaCognomi.indexOf("cognome");
+
 // lo voglio vedere stampato sull html utilizzo l inner
 output.innerHTML=listaCognomi
 
@@ -30,6 +29,10 @@ contenutoPrecedente = output.innerHTML;
 output.innerHTML = contenutoPrecedente + '<li>' + listaCognomi[i] + '</li>';
 
 }
+// indexof per vedere la posizione umana della lista in cui il nuovo utente si trova
+var posizioneUtente = document.getElementsByClassName('posizione');
+var posizioneUtente = listaCognomi.indexOf(cognome) + 1;
+posizioneUtente.innerHTML = ('la sua poszione è:' + posizioneUtente );
 
 
 
