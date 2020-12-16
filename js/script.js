@@ -7,6 +7,8 @@
 var cognome = prompt('qual\è il tuo cognome?')
 // creo l array con i cognomi dati
 var listaCognomi =['Bianchi' , 'Rossi' , 'Duzioni' , 'Balsano' , 'Verdi'];
+// il sort mette in ordine alfabetico l array
+listaCognomi.sort();
 // creo la variabile da inserire nell html
 var output = document.getElementById('lista');
 // aggiungo il nuovo cognome nella lista con push
@@ -14,8 +16,9 @@ listaCognomi.push(cognome);
 // lo voglio vedere stampato sull html utilizzo l inner
 output.innerHTML=listaCognomi
 
-// creo un ciclo for che vada a stamparmi tutti i cognomi come fossero una lista in innerHTML, e con sort dovrebbe metterli in ordine albabetico
 
+
+// creo un ciclo for che vada a stamparmi tutti i cognomi come fossero una lista in innerHTML
 var contenutoPrecedente;
 
 for (i = 0; i < listaCognomi.length; i++ ){
@@ -24,7 +27,6 @@ contenutoPrecedente = output.innerHTML;
 output.innerHTML = contenutoPrecedente + '<li>' + listaCognomi[i] + '</li>';
 
 
-
 }
-
+// alternativa alla riga 24
 // output.innerHTML + = '<li>' + listaCognomi[i] + '</li>'
