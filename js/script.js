@@ -13,3 +13,18 @@ var output = document.getElementById('lista');
 listaCognomi.push(cognome);
 // lo voglio vedere stampato sull html utilizzo l inner
 output.innerHTML=listaCognomi
+
+// creo un ciclo for che vada a stamparmi tutti i cognomi come fossero una lista in innerHTML, e con sort dovrebbe metterli in ordine albabetico
+
+var contenutoPrecedente;
+
+for (i = 0; i < listaCognomi.length; i++ ){
+
+contenutoPrecedente = output.innerHTML;
+output.innerHTML = contenutoPrecedente + '<li>' + listaCognomi[i] + '</li>';
+
+
+
+}
+
+// output.innerHTML + = '<li>' + listaCognomi[i] + '</li>'
