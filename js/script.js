@@ -12,6 +12,10 @@ var listaCognomi =['Bianchi' , 'Rossi' , 'Duzioni' , 'Balsano' , 'Verdi'];
 var output = document.getElementById('lista');
 // aggiungo il nuovo cognome nella lista con push
 listaCognomi.push(cognome);
+
+// listaCognomi = listaCognomi.toLowerCase();
+// listaCognomi = listaCognomi.toUpperCase();
+
 // il sort mette in ordine alfabetico l array ed è da inserire dopo averlo aggiunto
 listaCognomi.sort();
 
