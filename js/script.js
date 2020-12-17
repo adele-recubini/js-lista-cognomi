@@ -4,7 +4,9 @@
 // solo dopo, scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 
 // genero la domanda all utente
-var cognome = prompt('qual\è il tuo cognome?')
+var cognome = prompt('qual è il tuo cognome?')
+// trasformiamo le lettere del cognome
+cognome = cognome[0].toUpperCase() + cognome.slice(1).toLowerCase();
 // creo l array con i cognomi dati
 var listaCognomi =['Bianchi' , 'Rossi' , 'Duzioni' , 'Balsano' , 'Verdi'];
 
